@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Google Map of Jamaica API</title>
+<style>
+#map {
+height: 100%;
+}
+
+html, body {
+height: 100%;
+margin: 0;
+padding: 0;
+}
+</style>
+<script>
+function initMap() {
+var mapOptions = {
+zoom: 10,
+center: new google.maps.LatLng(18.1096, -77.2975),
+mapTypeId: 'satellite'
+};
+var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+}
+</script>
+</head>
+<body>
+<div id="map"></div>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk9t48Fz9BnaQR8ub22NkuUV5O0yz8p0I&callback=initMap">
+</script>
+</body>
+</html>
